@@ -1,0 +1,23 @@
+<div>
+  <h2>Temperature</h2>
+  <input #textbox1 type="number" [(ngModel)]="tInput" min="1" required>
+  <button (click)="temperatureConversion(textbox1.value, 'ceToF')">Celsius To Fahrenheit</button>
+  <button (click)="temperatureConversion(textbox1.value, 'fToCe')">Fahrenheit To Celsius</button>
+  <h3>Result: {{tOutPut}} </h3>
+</div>
+
+<div>
+  <h2>Weight</h2>
+  <input #textbox2 type="number" [(ngModel)]="wInput" min="1" required>
+  <button (click)="weightConversion(textbox2.value, 'kgToLb')">Kilograms To Pounds</button>
+  <button (click)="weightConversion(textbox2.value, 'lbToKg')">Pounds To Kilograms</button>
+  <h3>Result: {{wOutPut}} </h3>
+</div>
+
+<div>
+  <h2>Distance</h2>
+  <input #textbox3 type="number" [(ngModel)]="dInput" min="1" required>
+  <button (click)="distanceConversion(textbox3.value, 'kmToMi')">Kilometers To Miles</button>
+  <button (click)="distanceConversion(textbox3.value, 'miToKm')">Miles To Kilometers</button>
+  <h3>Result: {{dOutPut}} </h3>
+</div>
