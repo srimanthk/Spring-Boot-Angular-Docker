@@ -25,18 +25,20 @@ Add this to maven settings.xml </br>
 Download and Unzip the file
 
 With out docker : - Execute the below command from the command line by changing to the project directory 
-1. cd frontend
-2. npm install
-3. ng build --watch 
-4. Open another terminal and cd to project root 
-5. mvn spring-boot:run
-6. http://localhost:8080/
+1. mvn spring-boot:run
+2. Open another terminal and cd to project directory
+3. cd frontend
+4. npm install
+5. ng build
+6. npm start
+7. http://localhost:4200/
 
 With Docker (Maven Plugin) : - 
-1. cd frontend
-2. npm install
-3. ng build --watch 
-4. Open another terminal and cd to project root 
-5. mvn package dockerfile:build 
-6. docker run -p 8080:8080 -t unit-conversion/sample:latest
-7. http://localhost:8080/
+1. mvn package dockerfile:build 
+2. docker run -p 8080:8080 -t unit-conversion/sample:latest
+3. Open another terminal and cd to project directory
+4. cd frontend
+5. npm install
+6. ng build
+7. npm start
+8. http://localhost:4200/
