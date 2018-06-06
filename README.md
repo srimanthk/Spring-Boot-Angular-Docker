@@ -1,7 +1,7 @@
 # unit-conversion
 unit conversion application
 
-![alt text](https://github.com/srimanthk/unit-conversion.v1/blob/master/Capture.PNG)
+![alt text](https://github.com/srimanthk/unit-conversion.v1/blob/master/Capture.png)
 
 spring-boot-rest-angular-docker
 
