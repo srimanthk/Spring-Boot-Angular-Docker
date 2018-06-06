@@ -28,7 +28,7 @@ With out docker : - Execute the below command from the command line by changing 
 1. cd frontend
 2. npm install
 3. ng build --watch 
-4. cd .. 
+4. Open another terminal and cd to project root 
 5. mvn spring-boot:run
 6. http://localhost:8080/
 
@@ -36,7 +36,7 @@ With Docker (Maven Plugin) : -
 1. cd frontend
 2. npm install
 3. ng build --watch 
-4. cd .. 
+4. Open another terminal and cd to project root 
 5. mvn package dockerfile:build 
 6. docker run -p 8080:8080 -t unit-conversion/sample:latest
 7. http://localhost:8080/
