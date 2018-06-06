@@ -25,21 +25,21 @@ Add this to maven settings.xml </br>
 Download and Unzip the file
 
 Start/Deploy: Backend application (Spring Boot Rest API)
-  With out docker : - Execute the below command from the command line by changing to the project directory 
-    1. mvn spring-boot:run
-    2. Open browser and test endpoint: http://localhost:8080/api/unitconversion/temperature?input=10&convertType=ceToF
+With out docker : - Execute the below command from the command line by changing to the project directory 
+1. mvn spring-boot:run
+2. Open browser and test endpoint: http://localhost:8080/api/unitconversion/temperature?input=10&convertType=ceToF
 
-  With Docker (Maven Plugin) : - Execute the below command from the command line by changing to the project directory
-    1. mvn package dockerfile:build 
-    2. docker run -p 8080:8080 -t unit-conversion/sample:latest
-    3. Open browser and test endpoint: http://localhost:8080/api/unitconversion/temperature?input=10&convertType=ceToF
+With Docker (Maven Plugin) : - Execute the below command from the command line by changing to the project directory
+1. mvn package dockerfile:build 
+2. docker run -p 8080:8080 -t unit-conversion/sample:latest
+3. Open browser and test endpoint: http://localhost:8080/api/unitconversion/temperature?input=10&convertType=ceToF
     
 Start/Deploy: Frontend application (Angular application)
-  Open a new terminal and execute the below command from the command line by changing to the project directory
-    1. cd frontend
-    2. npm install
-    3. ng build
-    4. npm start
-    5. http://localhost:4200/
+Open a new terminal and execute the below command from the command line by changing to the project directory
+1. cd frontend
+2. npm install
+3. ng build
+4. npm start
+5. http://localhost:4200/
 
 
