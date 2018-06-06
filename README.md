@@ -5,7 +5,7 @@ unit conversion application
 
 spring-boot-rest-angular-docker
 
-Metric/Imperial vice versa unit conversion application. Application developed using Spring Boot, Rest API, Angular 2
+Metric/Imperial vice versa unit conversion application. Application developed using Spring Boot, Rest API, Angular 4
 
 Required:
 
@@ -24,21 +24,22 @@ Add this to maven settings.xml </br>
 
 Download and Unzip the file
 
-With out docker : - Execute the below command from the command line by changing to the project directory 
-1. mvn spring-boot:run
-2. Open another terminal and cd to project directory
-3. cd frontend
-4. npm install
-5. ng build
-6. npm start
-7. http://localhost:4200/
+Start/Deploy: Backend application (Spring Boot Rest API)
+  With out docker : - Execute the below command from the command line by changing to the project directory 
+    1. mvn spring-boot:run
+    2. Open browser and test endpoint: http://localhost:8080/api/unitconversion/temperature?input=10&convertType=ceToF
 
-With Docker (Maven Plugin) : - 
-1. mvn package dockerfile:build 
-2. docker run -p 8080:8080 -t unit-conversion/sample:latest
-3. Open another terminal and cd to project directory
-4. cd frontend
-5. npm install
-6. ng build
-7. npm start
-8. http://localhost:4200/
+  With Docker (Maven Plugin) : - Execute the below command from the command line by changing to the project directory
+    1. mvn package dockerfile:build 
+    2. docker run -p 8080:8080 -t unit-conversion/sample:latest
+    3. Open browser and test endpoint: http://localhost:8080/api/unitconversion/temperature?input=10&convertType=ceToF
+    
+Start/Deploy: Frontend application (Angular application)
+  Open a new terminal and execute the below command from the command line by changing to the project directory
+    1. cd frontend
+    2. npm install
+    3. ng build
+    4. npm start
+    5. http://localhost:4200/
+
+
